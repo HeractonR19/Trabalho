@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+  <title>Tela Funcionario</title>
+  <style>
+   .container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 90%;
+  height: 40%;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: #ffffff;
+}
+
+.btn-lg {
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container d-flex align-items-center text-center h-100">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="cadastrarCliente.html"><button type="button" class="btn btn-primary btn-lg btn-block">Cadastro de Cliente</button></a>
+       <a href="cadastrarFuncionario.html"> <button type="button" class="btn btn-secondary btn-lg btn-block">Cadastro de Funcionario</button></a>
+      </div>
+      <div class="col-md-6">
+       <a href="/Projeto PI/P.I HERACTON/P.I/HTML/demandas.html"> <button type="button" class="btn btn-primary btn-lg btn-block">Cadastro de Pedido</button></a>
+      <a href="cadastrarProduto.html"> <button type="button" class="btn btn-secondary btn-lg btn-block" style="text-decoration: none;">Cadastro de Produto</button></a> 
+      </div>
+      <button type="button" class="btn btn-primary btn-lg back-button" onclick="history.back()">Voltar</button>
+    </div>
+  </div>
+</body>
+</html>

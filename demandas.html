@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Projeto PI/P.I HERACTON/P.I/CSS/demandasS.css">
+    <title>Pedidos</title>  
+
+</head>
+<body>
+    <h1>Faça seu Pedido</h1>
+    <form id="orderForm">
+        <label for="customerName">Nome do Cliente:</label>
+        <input type="text" id="customerName" name="customerName" required><br><br>
+
+        <label for="customerEmail">Email do Cliente:</label>
+        <input type="email" id="customerEmail" name="customerEmail" required><br><br>
+
+        <label for="customerPhone">Telefone do Cliente:</label>
+        <input type="number" id="customerPhone" name="customerPhone" required><br><br>
+
+        <label for="product">Produto:</label>
+        <input type="text" id="product" name="product" required><br><br>
+
+        <label for="quantity">Quantidade:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+
+        <button type="submit">Enviar Pedido</button>
+        <button id="clearButton">Apagar</button>
+        <button type="submit"><a href="/Projeto PI/P.I HERACTON/P.I/HTML/relatorioDePedidos.html"></a>Ver Relatorio</button>
+        <button><a href="telaDeCadastros.html"></a>Voltar</button>
+    </form>
+  
+     <tbody id="orderTableBody"></tbody>
+
+    <script src="/Projeto PI/P.I HERACTON/P.I/JAVASCRIPT/demandas.js"></script>
+</body>
+</html>

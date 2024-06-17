@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+h1 {
+  grid-column: 1 / -1;
+}
+
+h2 {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul {
+  padding: 20px;
+}
+
+#clientes, #funcionarios, #produtos {
+  grid-column: auto;
+}
+</style>
+<body>
+    <h1>Admin</h1>
+    <div class="coluna">
+      <h2>Clientes</h2>
+      <ul id="clientes"></ul>
+    </div>
+    <div class="coluna">
+      <h2>Funcionários</h2>
+      <!-- <ul id="funcionarios"></ul> -->
+      <form id="cadastro-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo"><br><br>
+        <input type="submit" value="Cadastrar">
+      </form>
+      
+      
+    </div>
+    <div class="coluna">
+      <h2>Produtos</h2>
+      <ul id="produtos"></ul>
+    </div>
+
+    <script src="/Projeto PI/P.I HERACTON/P.I/JAVASCRIPT/admin.js"></script>
+    <script>
+      // Faz uma requisição para o servidor ou banco de dados para cadastrar o funcionário
+      document.getElementById('cadastro-form').addEventListener('submit', event => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        fetch('/cadastrar-funcionario', {
+          method: 'POST',
+          body: formData
+        })
+          .then(response => response.json())
+          .then(data => {
+            console.log('Funcionário cadastrado com sucesso!');
+          });
+      });
+    </script>
+</body>
+</html>

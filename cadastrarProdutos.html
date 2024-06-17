@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: auto;
+        }
+
+        input,
+        select,
+        button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        h1 {
+            padding-left: 35%;
+            padding-bottom: 10%;
+        }
+
+        a {
+            padding: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cadastro de Produtos</h1>
+
+        <form method="post">
+            <h2>Informações Básicas</h2>
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" name="nomeProduto" required>
+            <label for="descricaoProduto">Descrição do Produto:</label>
+            <textarea id="descricaoProduto" name="descricaoProduto" rows="5" required></textarea>
+
+            <label for="nomeTecido">Tipo de Tecido:</label>
+            <select name="tiposTecido" id="" required>
+                <option value="algodao">Algodão</option>
+                <option value="viscolinho">Viscolinho</option>
+                <option value="laise">Laise</option>
+                <option value="Poliester">Poliéster</option>
+                <option value="viscose">Viscose</option>
+                <option value="tecidoPlano">Tecido Plano</option>
+                <option value="linho">Linho</option>
+                <option value="lurex">Lurex</option>
+                <optn value="tweed">Tweed</optn>
+            </select>
+            <h2>Dimensões</h2>
+
+            <label for="tamanhoProduto">Tamanho:</label>
+            <div class="input-group">
+                <input type="number" id="tamanhoProduto" name="tamanhoProduto" required>
+                <select id="unidadeTamanhoProduto" name="unidadeTamanhoProduto" required>
+                    <option value="cm">cm</option>
+                    <option value="m">m</option>
+                </select>
+            </div>
+
+            <label for="alturaProduto">Altura:</label>
+            <div class="input-group">
+                <input type="number" id="alturaProduto" name="alturaProduto" required>
+                <select id="unidadeAlturaProduto" name="unidadeAlturaProduto" required>
+                    <option value="cm">cm</option>
+                    <option value="m">m</option>
+                </select>
+            </div>
+            <label for="larguraProduto">Largura:</label>
+            <div class="input-group">
+                <input type="number" id="larguraProduto" name="larguraProduto" required>
+                <select id="unidadeLarguraProduto" name="unidadeLarguraProduto" required>
+        </form>
+        <button type="submit">Enviar</button> 
+        <button type="button"></button>
+</body>
+
+</html>

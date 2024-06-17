@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/teste.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        padding-left: 720px;
+        padding-top: 70px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        /* Espaçamento entre os itens */
+        width: 100%;
+        /* Ajuste a largura conforme necessário */
+        max-width: 400px;
+        /* Ajuste a largura máxima conforme necessário */
+        padding-left: 650px;
+        padding-top: 70px;
+    }
+
+    .form-control {
+        width: 100%;
+        /* Ajuste a largura conforme necessário */
+    }
+
+    .button {
+        padding: 10px 20px;
+        /* Ajuste o padding conforme necessário */
+    }
+</style>
+
+<body>
+    <h1>
+        Cadastro de Cliente
+    </h1>
+    <form class="formulario" id="form">
+        <div class="container-razaoSocial">
+            <label for="razaoSocial" class="form-label-razaoSocial">Razão Social</label>
+            <input type="text" class="form-control" id="razaoSocial">
+        </div>
+
+        <div class="form-content">
+             <label for="username" class="form-label-name">Nome</label>
+            <input type="text" class="form-control" id="username">
+            <a>Aqui vai a mensagem de erro...</a>
+        </div>
+
+        <div class="form-content">
+            <label for="email" class="form-label-email">Email</label>
+            <input type="email" class="form-control" id="email">
+            <a>Aqui vai a mensagem de erro...</a>
+        </div>
+        
+
+        <div class="form-content">
+            <label for="contato" class="form-label-contato">Contato</label>
+            <input type="number" class="form-control" id="contato">
+        </div>
+
+        <div class="form-content">
+            <label for="usuario" class="form-label-usuario">Usuário</label>
+            <input type="text" class="form-control" id="usuario">
+            <a>Aqui vai a mensagem de erro...</a>
+        </div>
+
+        <div class="form-content">
+            <label for="senha" class="form-label-senha">Senha</label>
+            <input type="password" class="form-control" id="senha">
+            <a>Aqui vai a mensagem de erro...</a>
+        </div>
+
+        <div class="container-button">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+</body>
+
+</html>
